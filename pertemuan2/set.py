@@ -1,10 +1,11 @@
-#sub-bab 'python sets'\
+#sub-bab 'python sets'
 
-thisset = {"apple", "banana", "cherry"} #contoh dekalarasi set dengan menggunakan {}
+#contoh dekalarasi set dengan menggunakan {}
+thisset = {"apple", "banana", "cherry"}
 print(thisset)
 
 '''
-set memiliki sifat unordered, unchangeable, dan not allow duplicate
+sets memiliki sifat unordered, unchangeable, dan not allow duplicate
 - unordered berarti tidak berurutan, set tidak menggunakan indeks sehingga urutan set akan acak
 - unchangeable berarti tidak dapat, tetapi set dapat ditambah maupun dikurang
 - not allow duplcate berarti isi set tidak dapat memiliki isi yang sama
@@ -32,7 +33,9 @@ print(thisset)
 
 #sub-bab 'access set items'
 
-#data didalam set tidak dapat diakses menggunakan indeks atau key, tetapi dapat melakukan perulangan for untuk melalui item-item dalam himpunan atau data dapat dicari menggunakan fungsi in
+#data didalam set tidak dapat diakses menggunakan indeks atau key,
+#tetapi dapat melakukan perulangan for untuk melalui item-item dalam
+#himpunan atau data dapat dicari menggunakan fungsi in
 thisset = {"apple", "banana", "cherry"}
 for x in thisset:
     print(x)
@@ -48,7 +51,9 @@ thisset = {"apple", "banana", "cherry"}
 thisset.add("orange")
 print(thisset)
 
-#set juga dapat dimasukkan kedalam set lainnya menggunakan fungsi .update, tidak hanya set yang dapat ditambah, struktur data lainnya juga dapat ditambah seperti list, tuple maupun dictionary
+#set juga dapat dimasukkan kedalam set lainnya menggunakan fungsi .update,
+#tidak hanya set yang dapat ditambah, struktur data lainnya juga dapat
+#ditambah seperti list, tuple maupun dictionary
 thisset = {"apple", "banana", "cherry"}
 tropical = {"pineapple", "mango", "papaya"}
 thisset.update(tropical)
@@ -58,7 +63,9 @@ print(thisset)
 #sub-bab 'remove set items'
 
 #untuk menghapus item dalam set dapat menggunakan fungsi .remove atau .discard
-#perbedaan antara remove dan discard adalah ketika menggunakan remove jika item yang dihapus tidak terdapat didalam set maka akan menghasilkan error, tetapi ketika menggunakan discard tidak akan error
+#perbedaan antara remove dan discard adalah ketika menggunakan remove
+#jika item yang dihapus tidak terdapat didalam set maka akan menghasilkan error,
+#tetapi ketika menggunakan discard tidak akan error
 thisset = {"apple", "banana", "cherry"}
 thisset.remove("banana")
 print(thisset)

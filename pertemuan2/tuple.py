@@ -1,6 +1,8 @@
 #sub-bab 'python tuples'
 
-mytuple = ("apple", "banana", "cherry") #contoh deklarasi tuple dengan menggunakan ()
+#contoh deklarasi tuple dengan menggunakan ()
+mytuple = ("apple", "banana", "cherry")
+print(mytuple)
 
 '''
 tuple memiliki sifat ordered, unchangeable dan allow duplicate
@@ -26,13 +28,16 @@ print(thistuple)
 
 #sub-bab 'access tuples'
 
-thistuple = ("apple", "banana", "cherry") #tuple dapat diakses dengan menggunakan indeks, indeks mulai dari 0
+#tuple dapat diakses dengan menggunakan indeks, indeks mulai dari 0
+thistuple = ("apple", "banana", "cherry")
 print(thistuple[1]) #output : banana
 
-thistuple = ("apple", "banana", "cherry") #indeks negatif akan menghitung indeks dari data paling akhir
+#indeks negatif akan menghitung indeks dari data paling akhir
+thistuple = ("apple", "banana", "cherry")
 print(thistuple[-1]) #output : cherry
 
-thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango") #range indeks akan menampilkan range tuple dari awal hingga akhir range
+#range indeks akan menampilkan range tuple dari awal hingga akhir range
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
 print(thistuple[2:5]) #output : cherry, orange, kiwi
 
 thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
@@ -41,17 +46,20 @@ print(thistuple[:4]) #output : apple, banana, cherry, orange
 thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
 print(thistuple[2:]) #output : cherry, orange, kiwi, melon, mango
 
-thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango") #range indeks akan menampilkan range tuple dari awal hingga akhir range dengan perhitungan dari akhir data
+#range indeks akan menampilkan range tuple dari awal hingga akhir range dengan perhitungan dari akhir data
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
 print(thistuple[-4:-1]) #output : orange, kiwi, melon
 
+#untuk mengecek data didalam tuple apakah ada atau tidak, dengan menggunakan fungsi 'in'
 thistuple = ("apple", "banana", "cherry")
-if "apple" in thistuple: #untuk mengecek data didalam tuple apakah ada atau tidak, dengan menggunakan fungsi 'in'
+if "apple" in thistuple:
   print("Yes, 'apple' is in the fruits tuple")
 
 
 #sub-bab 'update tuples'
 
-#tuple tidak dapat diubah, tetapi dapat diakali dengan mengubahnya menjadi list terlebih dahulu, lalu mengubah data, lalu kembalikan menjadi tuple kembali
+#tuple tidak dapat diubah, tetapi dapat diakali dengan mengubahnya menjadi list terlebih dahulu,
+#lalu mengubah data, lalu kembalikan menjadi tuple kembali
 x = ("apple", "banana", "cherry") #x berupa tuple
 y = list(x) #y berupa list dari x
 y[1] = "kiwi" #indeks pertama diganti menjadi kiwi
@@ -90,12 +98,14 @@ fruits = ("apple", "banana", "cherry")
 
 #nilai tuple juga dapat diekstrak kembali ke dalam variabel yang disebut sebagao unpacking tuple
 fruits = ("apple", "banana", "cherry")
-(green, yellow, red) = fruits #masing-masing variabel akan menyimpan kembali data didalam tuple dengan catatan banyak variabel sama dengan banyak data
+#masing-masing variabel akan menyimpan kembali data didalam tuple dengan catatan banyak variabel sama dengan banyak data
+(green, yellow, red) = fruits
 print(green)
 print(yellow)
 print(red)
 
-#jika banyak variabel tidak sama dengan banyak data, maka perlu menggunakan arteisk (*), yang dimana variabel yang menggunakannya akan menjadi tuple yang menyimpan sisa data
+#jika banyak variabel tidak sama dengan banyak data, maka perlu menggunakan arteisk (*),
+#yang dimana variabel yang menggunakannya akan menjadi tuple yang menyimpan sisa data
 fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
 (green, yellow, *red) = fruits
 print(green)

@@ -3,34 +3,47 @@
 thislist = ['Apple', 'Banana', 'Cherry']
 print(thislist)
 
-#List memiliki sifat ordered yaitu terurut, artinya item-item tersebut memiliki urutan yang telah ditentukan, dan urutan tersebut tidak akan berubah. jika item baru ditambahkan ke dalam daftar, item baru tersebut akan ditempatkan di akhir daftar.
-#List juga memiliki sifat changeable, artinya item dapat diubah, ditambah, dan dihapus dalam daftar setelah daftar tersebut dibuat.
+'''
+List memiliki sifat ordered yaitu terurut, artinya item-item tersebut
+memiliki urutan yang telah ditentukan, dan urutan tersebut tidak akan berubah.
+jika item baru ditambahkan ke dalam daftar, item baru tersebut akan ditempatkan
+di akhir daftar. List juga memiliki sifat changeable, artinya item dapat diubah,
+ditambah, dan dihapus dalam daftar setelah daftar tersebut dibuat.
+'''
 
-thislist = ["apple", "banana", "cherry", "apple", "cherry"] #isi list dapat memiliki nilai yang sama
+#isi list dapat memiliki nilai yang sama
+thislist = ["apple", "banana", "cherry", "apple", "cherry"]
 print(thislist)
 
+#fungsi len berguna untuk mengetahui panjang list
 thislist = ["apple", "banana", "cherry"]
-print(len(thislist)) #fungsi len berguna untuk mengetahui panjang list
+print(len(thislist))
 
-list1 = ["abc", 34, True, 40, "male"] #list dapat menyimpan berbagai tipe data
+#list dapat menyimpan berbagai tipe data
+list1 = ["abc", 34, True, 40, "male"]
 
+#fungsi type berguna untuk mengetahui tipe data
 mylist = ["apple", "banana", "cherry"]
-print(type(mylist)) #fungsi type berguna untuk mengetahui tipe data
+print(type(mylist))
 
-thislist = list(("apple", "banana", "cherry")) #constructor list() berguna ketika ingin membuat list baru
+#constructor list() berguna ketika ingin membuat list baru
+thislist = list(("apple", "banana", "cherry"))
 print(thislist)
 
 
 #sub-bab 'access list items'
 
+#untuk mengakses isi dari list dapat menggunakan indeks yang dimulai dari 0
 thislist = ["apple", "banana", "cherry"]
-print(thislist[1]) #untuk mengakses isi dari list dapat menggunakan indeks yang dimulai dari 0
+print(thislist[1])
 
+#indeks negatif akan menghitung indeks dari belakang list, sehingga output yang akan dihasilkan adalah 'cherry'
 thislist = ["apple", "banana", "cherry"]
-print(thislist[-1]) #indeks negatif akan menghitung indeks dari belakang list, sehingga output yang akan dihasilkan adalah 'cherry'
+print(thislist[-1])
 
+#range indeks berguna ketika ingin menampilkan isi dari list dari indeks ke-n menuju indeks ke-m
 thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
-print(thislist[2:5]) #range indeks berguna ketika ingin menampilkan isi dari list dari indeks ke-n menuju indeks ke-m
+print(thislist[2:5])
 
 thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 print(thislist[:4]) #output : apple, banana, cherry, orange
@@ -41,8 +54,9 @@ print(thislist[2:]) #output : cherry, orange, kiwi, melon, mango
 thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 print(thislist[-4:-1]) #output : oange, kiwi, melon
 
+#untuk mengecek data apakah ada atau tidak, dengan menggunakan fungsi in
 thislist = ["apple", "banana", "cherry"]
-if "apple" in thislist: #untuk mengecek data apakah ada atau tidak, dengan menggunakan fungsi in
+if "apple" in thislist:
   print("Yes, 'apple' is in the fruits list")
 
 
@@ -58,12 +72,14 @@ thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
 thislist[1:3] = ["blackcurrant", "watermelon"]
 print(thislist)
 
-#jika item yang ditambah lebih banyak dari yang diganti, maka item tersebut akan dimasukkan ketempat spesifik
+#jika item yang ditambah lebih banyak dari yang diganti,
+#maka item tersebut akan dimasukkan ketempat spesifik
 thislist = ["apple", "banana", "cherry"]
 thislist[1:2] = ["blackcurrant", "watermelon"]
 print(thislist)
 
-#jika item yang ditambah lebih sedikit dari yang diganti, maka item yang dimasukkan akan masuk dan item sisa akan dikeluarkan
+#jika item yang ditambah lebih sedikit dari yang diganti,
+#maka item yang dimasukkan akan masuk dan item sisa akan dikeluarkan
 thislist = ["apple", "banana", "cherry"]
 thislist[1:3] = ["watermelon"]
 print(thislist)
@@ -210,7 +226,8 @@ thislist = ["banana", "Orange", "Kiwi", "cherry"]
 thislist.sort()
 print(thislist)
 
-#tetapi, jika ingin mengurutkan dari kecil ke besar, dapat menggunakan funsi bawaan sebagai fungsi utama saat mengurutkan data
+#tetapi, jika ingin mengurutkan dari kecil ke besar,
+#dapat menggunakan funsi bawaan sebagai fungsi utama saat mengurutkan data
 thislist = ["banana", "Orange", "Kiwi", "cherry"]
 thislist.sort(key = str.lower)
 print(thislist)
@@ -247,7 +264,8 @@ list2 = [1, 2, 3]
 list3 = list1 + list2
 print(list3)
 
-#cara lain untuk menambah list satu ke list lainnya adalah dengan menggunakan fungsi append dan dilakukan satu per satu menggunakan for loop
+#cara lain untuk menambah list satu ke list lainnya adalah dengan menggunakan
+#fungsi append dan dilakukan satu per satu menggunakan for loop
 list1 = ["a", "b" , "c"]
 list2 = [1, 2, 3]
 for x in list2:
