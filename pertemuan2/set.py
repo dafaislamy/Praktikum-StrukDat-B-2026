@@ -88,7 +88,7 @@ print(thisset)
 #fungsi del akan menghapus seluruh set
 thisset = {"apple", "banana", "cherry"}
 del thisset
-print(thisset)
+# print(thisset)
 
 
 #sub-bab 'loop sets'
