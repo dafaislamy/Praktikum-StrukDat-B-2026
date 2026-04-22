@@ -35,15 +35,15 @@ print(thislist)
 
 #untuk mengakses isi dari list dapat menggunakan indeks yang dimulai dari 0
 thislist = ["apple", "banana", "cherry"]
-print(thislist[1])
+print(thislist[1]) #output : banana
 
 #indeks negatif akan menghitung indeks dari belakang list, sehingga output yang akan dihasilkan adalah 'cherry'
 thislist = ["apple", "banana", "cherry"]
-print(thislist[-1])
+print(thislist[-1]) #output : cherry
 
 #range indeks berguna ketika ingin menampilkan isi dari list dari indeks ke-n menuju indeks ke-m
 thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
-print(thislist[2:5])
+print(thislist[2:5]) #output : cherry, orange, kiwi
 
 thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
 print(thislist[:4]) #output : apple, banana, cherry, orange

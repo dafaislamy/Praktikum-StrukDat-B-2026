@@ -1,102 +1,102 @@
-#sub-bab 'python sets'
+# #sub-bab 'python sets'
 
-#contoh dekalarasi set dengan menggunakan {}
-thisset = {"apple", "banana", "cherry"}
-print(thisset)
+# #contoh dekalarasi set dengan menggunakan {}
+# thisset = {"apple", "banana", "cherry"}
+# print(thisset)
 
-'''
-sets memiliki sifat unordered, unchangeable, dan not allow duplicate
-- unordered berarti tidak berurutan, set tidak menggunakan indeks sehingga urutan set akan acak
-- unchangeable berarti tidak dapat, tetapi set dapat ditambah maupun dikurang
-- not allow duplcate berarti isi set tidak dapat memiliki isi yang sama
-'''
+# '''
+# sets memiliki sifat unordered, unchangeable, dan not allow duplicate
+# - unordered berarti tidak berurutan, set tidak menggunakan indeks sehingga urutan set akan acak
+# - unchangeable berarti tidak dapat, tetapi set dapat ditambah maupun dikurang
+# - not allow duplcate berarti isi set tidak dapat memiliki isi yang sama
+# '''
 
-#set bersifat not allow duplicate sehingga akan menghapus nilai yang sama pada set
-thisset = {"apple", "banana", "cherry", "apple"}
-print(thisset)
+# #set bersifat not allow duplicate sehingga akan menghapus nilai yang sama pada set
+# thisset = {"apple", "banana", "cherry", "apple"}
+# print(thisset)
 
-#nilai True dan 1 dianggap sama didalam set sehingga dianggap duplicate, begitu juga nilai False dan 0
-thisset = {"apple", "banana", "cherry", True, 1, 2}
-print(thisset)
+# #nilai True dan 1 dianggap sama didalam set sehingga dianggap duplicate, begitu juga nilai False dan 0
+# thisset = {"apple", "banana", "cherry", True, 1, 2}
+# print(thisset)
 
-thisset = {"apple", "banana", "cherry"}
-print(len(thisset)) #fungsi len berguna untuk mengetahui panjang set
+# thisset = {"apple", "banana", "cherry"}
+# print(len(thisset)) #fungsi len berguna untuk mengetahui panjang set
 
-set1 = {"abc", 34, True, 40, "male"} #set dapat berisi berbagai tipe data
+# set1 = {"abc", 34, True, 40, "male"} #set dapat berisi berbagai tipe data
 
-myset = {"apple", "banana", "cherry"}
-print(type(myset)) #fungsi type berguna untuk mengetahui tipe data dari set
+# myset = {"apple", "banana", "cherry"}
+# print(type(myset)) #fungsi type berguna untuk mengetahui tipe data dari set
 
-thisset = set(("apple", "banana", "cherry")) #gunakan set() untuk membuat set
-print(thisset)
-
-
-#sub-bab 'access set items'
-
-#data didalam set tidak dapat diakses menggunakan indeks atau key,
-#tetapi dapat melakukan perulangan for untuk melalui item-item dalam
-#himpunan atau data dapat dicari menggunakan fungsi in
-thisset = {"apple", "banana", "cherry"}
-for x in thisset:
-    print(x)
-
-thisset = {"apple", "banana", "cherry"}
-print("banana" in thisset) #output akan menghasilkan nilai True
-
-
-#sub-bab 'add set items'
-
-#untuk menambah data kedalam set dapat menggunakan fungsi .add
-thisset = {"apple", "banana", "cherry"}
-thisset.add("orange")
-print(thisset)
-
-#set juga dapat dimasukkan kedalam set lainnya menggunakan fungsi .update,
-#tidak hanya set yang dapat ditambah, struktur data lainnya juga dapat
-#ditambah seperti list, tuple maupun dictionary
-thisset = {"apple", "banana", "cherry"}
-tropical = {"pineapple", "mango", "papaya"}
-thisset.update(tropical)
-print(thisset)
-
-
-#sub-bab 'remove set items'
-
-#untuk menghapus item dalam set dapat menggunakan fungsi .remove atau .discard
-#perbedaan antara remove dan discard adalah ketika menggunakan remove
-#jika item yang dihapus tidak terdapat didalam set maka akan menghasilkan error,
-#tetapi ketika menggunakan discard tidak akan error
-thisset = {"apple", "banana", "cherry"}
-thisset.remove("banana")
-print(thisset)
-
-thisset = {"apple", "banana", "cherry"}
-thisset.discard("banana")
-print(thisset)
-
-#fungsi .pop dapat menghapus item didalam set secara random / acak
-thisset = {"apple", "banana", "cherry"}
-x = thisset.pop()
-print(x)
-print(thisset)
-
-#funsi .clear akan menghapus semua item didalam set
-thisset = {"apple", "banana", "cherry"}
-thisset.clear()
-print(thisset)
-
-#fungsi del akan menghapus seluruh set
-thisset = {"apple", "banana", "cherry"}
-del thisset
+# thisset = set(("apple", "banana", "cherry")) #gunakan set() untuk membuat set
 # print(thisset)
 
 
-#sub-bab 'loop sets'
+# #sub-bab 'access set items'
 
-#loop pada set dapat dilakukan dengan menggunakan perulangan for
-thisset = {"apple", "banana", "cherry"}
-for x in thisset:
-    print(x)
+# #data didalam set tidak dapat diakses menggunakan indeks atau key,
+# #tetapi dapat melakukan perulangan for untuk melalui item-item dalam
+# #himpunan atau data dapat dicari menggunakan fungsi in
+# thisset = {"apple", "banana", "cherry"}
+# for x in thisset:
+#     print(x)
+
+# thisset = {"apple", "banana", "cherry"}
+# print("banana" in thisset) #output akan menghasilkan nilai True
+
+
+# #sub-bab 'add set items'
+
+# #untuk menambah data kedalam set dapat menggunakan fungsi .add
+# thisset = {"apple", "banana", "cherry"}
+# thisset.add("orange")
+# print(thisset)
+
+# #set juga dapat dimasukkan kedalam set lainnya menggunakan fungsi .update,
+# #tidak hanya set yang dapat ditambah, struktur data lainnya juga dapat
+# #ditambah seperti list, tuple maupun dictionary
+# thisset = {"apple", "banana", "cherry"}
+# tropical = {"pineapple", "mango", "papaya"}
+# thisset.update(tropical)
+# print(thisset)
+
+
+# #sub-bab 'remove set items'
+
+# #untuk menghapus item dalam set dapat menggunakan fungsi .remove atau .discard
+# #perbedaan antara remove dan discard adalah ketika menggunakan remove
+# #jika item yang dihapus tidak terdapat didalam set maka akan menghasilkan error,
+# #tetapi ketika menggunakan discard tidak akan error
+# thisset = {"apple", "banana", "cherry"}
+# thisset.remove("banana")
+# print(thisset)
+
+# thisset = {"apple", "banana", "cherry"}
+# thisset.discard("banana")
+# print(thisset)
+
+# #fungsi .pop dapat menghapus item didalam set secara random / acak
+# thisset = {"apple", "banana", "cherry"}
+# x = thisset.pop()
+# print(x)
+# print(thisset)
+
+# #funsi .clear akan menghapus semua item didalam set
+# thisset = {"apple", "banana", "cherry"}
+# thisset.clear()
+# print(thisset)
+
+# #fungsi del akan menghapus seluruh set
+# thisset = {"apple", "banana", "cherry"}
+# del thisset
+# # print(thisset)
+
+
+# #sub-bab 'loop sets'
+
+# #loop pada set dapat dilakukan dengan menggunakan perulangan for
+# thisset = {"apple", "banana", "cherry"}
+# for x in thisset:
+#     print(x)
 
 
 #sub-bab 'join sets'
@@ -129,7 +129,7 @@ set4 = {"apple", "bananas", "cherry"}
 myset = set1 | set2 | set3 |set4
 print(myset)
 
-#fungsi union dapat menggabungkan set dengan tipe data lain seperti list dan tuple, tetapi operator tidak bisa
+#fungsi union dapat menggabungkan set dengan tipe data lain seperti list dan tuple, tetapi operator | tidak bisa
 
 #fungsi .update menggabungkan set satu dengan set lainnya
 set1 = {"a", "b" , "c"}

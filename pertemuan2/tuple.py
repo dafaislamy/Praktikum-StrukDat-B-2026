@@ -88,7 +88,7 @@ thistuple = tuple(y)
 #tuple dapat dihapus menggunakan fungsi del
 thistuple = ("apple", "banana", "cherry")
 del thistuple
-print(thistuple)
+# print(thistuple)
 
 
 #sub-bab 'unpack tuples'
@@ -104,7 +104,7 @@ print(green)
 print(yellow)
 print(red)
 
-#jika banyak variabel tidak sama dengan banyak data, maka perlu menggunakan arteisk (*),
+#jika banyak variabel tidak sama dengan banyak data, maka perlu menggunakan arterisk (*),
 #yang dimana variabel yang menggunakannya akan menjadi tuple yang menyimpan sisa data
 fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
 (green, yellow, *red) = fruits
